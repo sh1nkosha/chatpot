@@ -1,0 +1,559 @@
+{
+  "intents": [
+    {
+      "intent": "الحواس",
+      "examples": [
+        {
+          "text": "هل تستطيع الاكل ؟"
+        },
+        {
+          "text": "هل تستطيع الرؤية؟"
+        },
+        {
+          "text": "هل تستطيع الشم؟"
+        },
+        {
+          "text": "هل تستطيع ان ترى؟"
+        },
+        {
+          "text": "هل تستطيع ان تشم؟"
+        },
+        {
+          "text": "هل تستطيع تذوق الطعام؟"
+        },
+        {
+          "text": "هل يمكنك الاكل؟"
+        },
+        {
+          "text": "هل يمكنك الرؤية؟"
+        },
+        {
+          "text": "هل يمكنك الشم؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الحواسس",
+      "examples": [
+        {
+          "text": "هل تستطيع التحرك؟"
+        },
+        {
+          "text": "هل تستطيع التحكم بحركتك؟"
+        },
+        {
+          "text": "هل تستطيع التوقف عن الحركة؟"
+        },
+        {
+          "text": "هل تستطيع تحريك جسمك؟"
+        },
+        {
+          "text": "هل تستطيع تحريك ذراعك"
+        },
+        {
+          "text": "هل تستطيع تحريك يديك؟"
+        },
+        {
+          "text": "هل تستيع تحريك ذراعك؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "العمر",
+      "examples": [
+        {
+          "text": "كم تبلغ من العمر؟"
+        },
+        {
+          "text": "كم عمرك؟"
+        },
+        {
+          "text": "هل يمكنك اخباري بعمرك؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الوداع",
+      "examples": [
+        {
+          "text": "الى اللقاء"
+        },
+        {
+          "text": "باي"
+        },
+        {
+          "text": "قود باي"
+        },
+        {
+          "text": "مع السلامة"
+        },
+        {
+          "text": "وداعا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "اهلا وسهلا"
+        },
+        {
+          "text": "اهلين"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "يامرحبا"
+        },
+        {
+          "text": "ياهلا والله"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "تعريف",
+      "examples": [
+        {
+          "text": "هل انت الي ؟"
+        },
+        {
+          "text": "هل انت انسان؟"
+        },
+        {
+          "text": "هل انت بشري ؟"
+        },
+        {
+          "text": "هل انت بشري ام روبوت؟"
+        },
+        {
+          "text": "هل انت بشري او روبوت ؟"
+        },
+        {
+          "text": "هل انت بشري او روبوت؟"
+        },
+        {
+          "text": "هل انت روبوت ؟"
+        },
+        {
+          "text": "هل انت روبوت ام بشر؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "شكرا",
+      "examples": [
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكرا لك"
+        },
+        {
+          "text": "شكريا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "منبه",
+      "examples": [
+        {
+          "text": "اريد استخدام المنبه؟"
+        },
+        {
+          "text": "اريد عمل منبه؟"
+        },
+        {
+          "text": "اريد منبه؟"
+        },
+        {
+          "text": "هل بامكاني عمل منبه؟"
+        },
+        {
+          "text": "هل تستطيع عمل منبه؟"
+        },
+        {
+          "text": "هل لديك منبه؟"
+        },
+        {
+          "text": "هل يتوفر لديك منبه؟"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "في اي يوم؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1626420040947",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1626420040977",
+      "previous_sibling": "handler_7_1626420040977"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1626420291914",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_2_1626420291916"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "في اي ساعة؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1626420291914",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1626420291916",
+      "previous_sibling": "handler_2_1626420291916"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1626420040947",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_7_1626420040977"
+    },
+    {
+      "type": "standard",
+      "title": "شكرا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "عفوا"
+              },
+              {
+                "text": "لا عليك "
+              },
+              {
+                "text": "لا شي يستحق الشكر"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#شكرا",
+      "dialog_node": "node_1_1626419076944",
+      "previous_sibling": "node_4_1626419073097"
+    },
+    {
+      "type": "standard",
+      "title": "تعريف",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "نعم , انا روبوت"
+              },
+              {
+                "text": "لا , انا لست انسان"
+              },
+              {
+                "text": "نعم ,انني روبوت"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#تعريف",
+      "dialog_node": "node_4_1626418035130",
+      "previous_sibling": "node_7_1626416951297"
+    },
+    {
+      "type": "standard",
+      "title": "الوداع",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مع السلامة "
+              },
+              {
+                "text": "اللقاء"
+              },
+              {
+                "text": "باي"
+              },
+              {
+                "text": "ود باي"
+              },
+              {
+                "text": "الجيد التحدث معك"
+              },
+              {
+                "text": "انني سعيد للتحدث معك"
+              },
+              {
+                "text": "شكرا لك للتواصل معي"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الوداع",
+      "dialog_node": "node_4_1626419073097",
+      "previous_sibling": "node_9_1626419453047"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اهلا وسهلا"
+              },
+              {
+                "text": "اهلين"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_7_1626416951297",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "الحواسس",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "نعم , استطيع"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الحواسس",
+      "dialog_node": "node_7_1626418520530",
+      "previous_sibling": "node_8_1626418524260"
+    },
+    {
+      "type": "standard",
+      "title": "الحواس",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لا استطيع"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الحواس",
+      "dialog_node": "node_8_1626418524260",
+      "previous_sibling": "node_9_1626420017819"
+    },
+    {
+      "type": "standard",
+      "title": "العمر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لا يوجد لدي عمر"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#العمر",
+      "dialog_node": "node_9_1626419453047",
+      "previous_sibling": "node_7_1626418520530"
+    },
+    {
+      "type": "frame",
+      "title": "منبه",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تم عمل المنبه"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#منبه",
+      "dialog_node": "node_9_1626420017819",
+      "previous_sibling": "node_4_1626418035130"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1626420017819",
+      "variable": "$date",
+      "dialog_node": "slot_4_1626420040947"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1626420017819",
+      "variable": "$time",
+      "dialog_node": "slot_8_1626420291914",
+      "previous_sibling": "slot_4_1626420040947"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_1_1626419076944",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا،تستطيع ان تسئلني ؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "speak",
+  "language": "ar",
+  "description": ""
+}
