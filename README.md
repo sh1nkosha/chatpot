@@ -1,9 +1,9 @@
 # chatpot
-هذا البرنامج عبارة عن الدردشة مع الروبوت حيث يمكنك القاء السلام والوداع والتحدث بامور اخرى حيث قمت بعمل حساب في (IBM wastone)
-ثم قمت باضافة ببعض الاسئلة المحتمل سؤالها بطرق مختلفة والاجابات التي من الممكن ان تنعرض ايضا بطرق مختلفة من بعض الاسئلة التي وضعتها
-1- هل تستطيع الشم
-2- هل تستطيع التحرك؟
-3- كم عمرك؟
-4-هل استطيع عمل منبه؟
-ثم قمت باستخراج الكود ك(.json)
-ووضعه في كود الاتش تي ام ال لنربط الكودين ببعضهم اي الواجهة والدردشة حيث عندما تظهر الواجهة سيعرض علامة الشات في الاسفل للتحدث مع الروبوت او الاستفار عن اسئلة معينة فيمكنك فقط الظغط عليها ثم البدء بالارسال كم ان الملف يحتوي على ملف سي اس اس لتزين الصفحة 
+This program is about chat with a robot where you can say hello,godbeay and talk about many things as i made an account in (IBM wastone)
+Then I added some questions that could be asked in different ways and the answers that could also be presented in different ways from some of the questions I put
+1- Can you smell?
+2- Can you move?
+3- How old are you?
+4- Can I make an alarm?
+Then I extracted the cose as json 
+And put it in the HTML code to link the two codes together (interface and chat) where when the interface appears, it will display the chat sign at the bottom to talk to the robot or inquire about specific questions. You can just click on it and then start sending  and we have file as CSS to decorate the page 
